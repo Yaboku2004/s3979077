@@ -1,0 +1,58 @@
+html{
+    background-color: white;
+}
+header{
+    background-color: white;
+
+}
+header .logo{
+    padding-right: 0;
+}
+header .navigationbar ul {
+    float: none;
+    background-color: red;
+}
+header .navigationbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+header .navigationbar ul li a{
+    color: white;
+    font-size: larger;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: blue;
+    width: 50%;
+    border-radius: 20px;
+}
+.mainlist{
+    background-color: pink;
+}
+#bookslist{
+    width: 50%;
+}
+#catbutton{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: cadetblue;
+    border: 0px;
+    border-radius: 10px;
+}
+footer{
+    padding-top: 20px;
+}
+footer button{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border: 0px;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
