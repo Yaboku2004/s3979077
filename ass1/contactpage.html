@@ -1,0 +1,135 @@
+
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Dung Tri
+ID: S3979077
+Acknowledgement: Acknowledge the resources that you use here. --><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgfiles/pageicon.png" />
+    <link rel="stylesheet" href="cssfiles/contactpagestyle.css" />
+    <title>Contact page</title>
+  </head>
+  <body>
+    <center>
+      <header>
+        <a class="logo" href="homepage.html"
+          ><img
+            src="imgfiles/storelogo.png"
+            witdh="100%"
+            alt="Store Logo"
+            width="250"
+        /></a>
+        <br />
+        <div class="mobilenavbaricon">+</div>
+        <nav class="navigationbar">
+          <ul>
+            <li><a href="homepage.html">Home</a></li>
+            &nbsp;&nbsp;
+            <li><a href="fiction.html" target="_blank">Fiction</a></li>
+            &nbsp;&nbsp;
+            <li><a href="non-fiction.html" target="_blank">Non-Fiction</a></li>
+            &nbsp;&nbsp;
+            <li>
+              <a href="childrensbooks.html" target="_blank">Children's Books</a>
+            </li>
+            &nbsp;&nbsp;
+            <li><a href="refbooks.html" target="_blank">Reference Books</a></li>
+            &nbsp;&nbsp;
+            <li><a href="textbooks.html" target="_blank">Textbooks</a></li>
+          </ul>
+        </nav>
+      </header>
+      <br />
+      <section>
+        <img
+          src="imgfiles/bookstore.jpg"
+          witdh="100%"
+          alt="Bookstore View"
+          width="100%"
+        />
+      </section>
+      <br />
+      <section>
+        <main class="contact">
+          <form action="/contact" method="post" class="contact-form">
+            <label for="contact-purpose">Contact Purpose:</label>
+            <select name="contact-purpose">
+              <option value="I want to sell books">I want to sell books</option>
+              <option value="I want to buy books">I want to buy books</option>
+            </select>
+            <br />
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <br />
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" />
+            <br />
+            <label for="contact-preference">Contact Preference:</label>
+            <input type="checkbox" name="contact-preference" value="By email" />
+            By email
+            <input type="checkbox" name="contact-preference" value="By phone" />
+            By phone
+            <br />
+            <label for="receive-weekly-newsletter"
+              >Receive Weekly Newsletter:</label
+            >
+            <input
+              type="radio"
+              name="receive-weekly-newsletter"
+              value="Yes"
+              checked
+            />
+            Yes
+            <input type="radio" name="receive-weekly-newsletter" value="No" />
+            No
+            <br />
+            <label for="extra-notes">Extra Notes:</label>
+            <textarea name="extra-notes" id="extra-notes"></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </form>
+        </main>
+        <br />
+        <div class="contact-box">
+          <a href="mail:S3979077@rmit.edu.vn"
+            ><button>S3979077@rmit.edu.vn</button></a
+          >
+        </div>
+        <br />
+        <div class="contact-box">
+          <a href="tel:0938887712"><button>0938887712</button></a>
+        </div>
+      </section>
+      <br />
+      <footer>
+        <nav>
+          <div>
+            <a href="contactpage.html" target="_blank"
+              ><button>About Us</button></a
+            ><br />
+            <a href="contactpage.html" target="_blank"
+              ><button>Privacy Policy</button></a
+            ><br />
+            <a href="contactpage.html" target="_blank"><button>Terms</button></a
+            ><br />
+            <a href="contactpage.html" target="_blank"
+              ><button>Copyright</button></a
+            ><br />
+            <a href="contactpage.html" target="_blank"
+              ><button>Contact Us</button></a
+            ><br />
+          </div>
+        </nav>
+      </footer>
+    </center>
+  </body>
+</html>
