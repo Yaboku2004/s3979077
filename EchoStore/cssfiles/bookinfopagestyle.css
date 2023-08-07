@@ -1,0 +1,146 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Dung Tri
+ID: S3979077
+Acknowledgement: Acknowledge the resources that you use here. */
+
+html{
+    background-color: white;
+}
+header{
+    background-color: white;
+
+}
+header .logo{
+    padding-right: 0;
+}
+.navigationbar{
+    display: block;
+    justify-content: center;
+}
+.mobilenavbaricon{
+    text-align:center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: larger;
+    background-color:red;
+    display: none;
+
+}
+header .navigationbar ul {
+    float: none;
+    background-color: red;
+}
+header .navigationbar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+header .navigationbar a{
+    color: white;
+    font-size: larger;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+@media (max-width: 768px){
+    .navigationbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+    .navigationbar ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .navigationbar li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: larger;
+    }
+    .navigationbar{
+        display: none;
+    }
+    .mobilenavbaricon{
+        display: block;
+    }
+    .mobilenavbaricon:hover + .navigationbar{
+        display: block;
+    }
+    .navigationbar:hover{
+        display: block;
+    }
+    .book-images{
+        flex-direction: column;
+    }
+    
+    .book-price{
+        margin-bottom: 10px;
+    }
+    
+    .add-to-cart-button{
+        margin-top: 10px;
+    }
+}
+.breadcrumb{
+    margin-bottom: 50px;
+    text-align: left;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.book-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+}
+.book-description p{
+    font-size: 20px;
+    margin:0 10%;
+}
+.book-description h2{
+    font-size: 30px;
+}
+.book-image{
+    width: 25%;
+    margin: 0 10px;
+}
+.book-price{
+    text-align: center;
+}
+section{
+    background-color: pink;
+}
+.book-price{
+    font-size: larger;
+}
+.add-to-cart-button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-to-cart-button p{
+    font-size: 20px;
+}
+footer{
+    padding-top: 20px;
+    background-color: blue;
+}
+footer button{
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    border: 0px;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
