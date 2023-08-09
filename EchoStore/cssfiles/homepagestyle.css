@@ -1,0 +1,117 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Dung Tri
+ID: S3979077
+Acknowledgement: Acknowledge the resources that you use here. */
+html{
+    background-color: rgb(255, 199, 199);
+}
+header{
+    background-color: white;
+
+}
+header .logo{
+    padding-right: 0;
+}
+.navigationbar{
+    display: block;
+    justify-content: center;
+}
+.mobilenavbaricon{
+    text-align:center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    font-size: larger;
+    background-color:rgb(255, 199, 199);
+    display: none;
+
+}
+header .navigationbar ul {
+    float: none;
+    background-color: rgb(255, 226, 226);
+}
+header .navigationbar li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+header .navigationbar a{
+    color: rgb(135, 133, 162);
+    font-size: larger;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+@media (max-width: 768px){
+    .navigationbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 5px 20px;
+    }
+    .navigationbar ul{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .navigationbar li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: larger;
+    }
+    .navigationbar{
+        display: none;
+    }
+    .mobilenavbaricon{
+        display: block;
+    }
+    .mobilenavbaricon:hover + .navigationbar{
+        display: block;
+    }
+    .navigationbar:hover{
+        display: block;
+    }
+}
+h2{
+    background-color: rgb(255, 226, 226);
+    width: 50%;
+    border-radius: 20px;
+}
+h2 a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(135, 133, 162);
+}
+.mainlist{
+    background-color: rgb(255, 199, 199);
+}
+#bookslist{
+    width: 50%;
+}
+#catbutton{
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 226, 226);
+    border: 100%;
+    border-radius: 10px;
+    color: rgb(135, 133, 162);
+}
+footer{
+    padding-top: 20px;
+    background-color: rgb(255, 199, 199);
+}
+footer button{
+    color: rgb(135, 133, 162);
+    background-color: rgb(255, 226, 226);
+    border-radius: 0;
+    width: 100%;
+    border: 0px;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    cursor: pointer;
+}
